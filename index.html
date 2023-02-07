@@ -33,9 +33,9 @@
                     <div class="right">
                         <ul class="nav navigation-links animate">
                             <li><a href="#page-top" class="scroll">Home</a></li>
-                            <li><a href="#about" class="scroll">About</a></li>
+                            <li><a href="#about" class="scroll">Sobre Nós</a></li>
                             <li><a href="#gallery" class="scroll">Portfolio</a></li>
-                            <li><a href="#contact" class="scroll">Contact</a></li>
+                            <li><a href="#contact" class="scroll">Contacto</a></li>
                         </ul>
                         <div class="nav-btn">
                             <figure></figure>
@@ -55,14 +55,15 @@
                     <div class="container">
                         <h1 class="animate">ARCHIGREEN<br>Sustainable Architecture</h1>
                         <form class="animate" id="form-hero">
-                            <label for="form-hero-email">Enter your email for the latest news</label>
+                            <label for="form-hero-email">Insira o seu email caso queira contactar-nos.</label>
                             <div class="row">
                                 <div class="col-md-5 col-sm-5">
                                     <div class="input-group">
-                                        <input type="email" class="form-control" id="form-hero-email" name="email" placeholder="Your email" required="">
-                                        <span class="input-group-btn">
-                                            <button class="btn" type="submit"><i class="arrow_right"></i></button>
-                                        </span>
+                                        <input type="email" class="form-control" id="form-hero-email" name="email" placeholder="Email" required="">
+                                            <span class="input-group-btn">
+                                                <button class="btn" type="button" onclick="document.getElementById('form-contact-email').value = document.getElementById('form-hero-email').value; window.location.href='#contact'"><i class="arrow_right"></i>
+                                                </button>
+                                            </span>
                                     </div><!-- /input-group -->
                                 </div>
                             </div>
@@ -157,7 +158,7 @@
 
         <div class="block" id="about">
             <div class="container">
-                <h2>Sobre Nós.</h2>
+                <h2>Sobre Nós</h2>
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <h3>A ARCHIGREEN, LDA foi fundada em 15 de Maio de 2014</h3>
@@ -460,7 +461,7 @@
 
         <div class="block" id="contact">
             <div class="container">
-                <h2>Contact.</h2>
+                <h2>Contacto</h2>
                 <div class="contact map">
                     <div class="row">
                         <div class="col-md-6 col-sm-6"  data-scroll-reveal="enter bottom and move 20px">
@@ -568,7 +569,7 @@
                 <div class="row">
                     <div class="col-md-2 col-sm-2">
                         <div class="number">
-                            <figure>459</figure>
+                            <figure id="projects">0</figure>
                             <p>Projectos</p>
                         </div>
                         <!--end number-->
@@ -576,7 +577,7 @@
                     <!--col-md-2-->
                     <div class="col-md-2 col-sm-2">
                         <div class="number">
-                            <figure>3</figure>
+                            <figure id="collabs">0</figure>
                             <p>Colaboradores</p>
                         </div>
                         <!--end number-->
@@ -584,7 +585,7 @@
                     <!--col-md-2-->
                     <div class="col-md-2 col-sm-2">
                         <div class="number">
-                            <figure>283</figure>
+                            <figure id="clients">0</figure>
                             <p>Clientes</p>
                         </div>
                         <!--end number-->
@@ -592,7 +593,7 @@
                     <!--col-md-2-->
                     <div class="col-md-2 col-sm-2">
                         <div class="number">
-                            <figure>9</figure>
+                            <figure id="cands">0</figure>
                             <p>Candidaturas Aceites</p>
                         </div>
                         <!--end number-->
@@ -623,6 +624,10 @@
 <!--end page-wrapper-->
 
 <!--end outer-wrapper-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/counter_up.js"></script>
+
 <script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
